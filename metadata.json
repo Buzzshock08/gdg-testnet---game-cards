@@ -1,0 +1,6 @@
+{
+  "name": "Decentralized Game Card Marketplace",
+  "description": "A decentralized Web3 marketplace to mint, list, auction, buy, and manage collectible car NFT cards on Ethereum Sepolia testnet with IPFS metadata storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

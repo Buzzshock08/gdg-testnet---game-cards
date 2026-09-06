@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decentralized Game Card Marketplace</title>
+    <meta name="description" content="A decentralized Web3 marketplace to mint, list, auction, buy, and manage collectible car NFT cards on Ethereum Sepolia testnet with IPFS metadata storage." />
+    <meta property="og:title" content="Decentralized Game Card Marketplace" />
+    <meta property="og:description" content="A decentralized Web3 marketplace to mint, list, auction, buy, and manage collectible car NFT cards on Ethereum Sepolia testnet with IPFS metadata storage." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Guard against iframe/browser environment where window.fetch has only a getter
+      (function () {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : undefined;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function () {
+              return currentFetch || originalFetch;
+            },
+            set: function (newFetch) {
+              currentFetch = newFetch;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (err) {
+          // If property cannot be redefined, silently ignore
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#F8F9FA] text-[#0F172A] antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
